@@ -1,0 +1,362 @@
+\documentclass[11pt]{article}
+\usepackage{times}
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{color}
+% \usepackage[small,skip=0pt]{caption}
+\usepackage{subcaption}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+
+\title{Improved Readability and Information Access with Patent Documents: User Study of the Related Technologies}
+
+%\author{A Anonymous 
+%\\	%Hanna Suominen,1 Gabriela Ferraro,2  Jaume Nualart,3  Weiwei Hou,4 and Leif Hanlen5 
+%   \\%NICTA / Locked Bag 8001, \\ Canberra ACT 2601, Australia \\
+%   \\ %The Australian National University\\
+%   \\ %University of Canberra \\
+%  \\ % {\tt \small{@nicta.com.au}} \\
+%\And
+%  B Anonymous
+%   \\%NICTA / Locked Bag 8001, \\ Canberra ACT 2601, Australia \\
+%   \\%The Australian National University\\ \\
+%   \\ %{\tt \small{@nicta.com.au}} \\
+%}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}   
+abstract here
+\end{abstract}
+
+
+
+\section{Introduction}
+% Version: 13/06/2014
+
+Clear language is important in any human communication to ensure efficiency and eliminate risks of misunderstanding. 
+With written text, this clarity, or ease-of-understanding,  is measured by readability and it can refer to readability of a word, phrase, sentence, paragraph, section, document, or document collection. 
+
+In this study, we focus on readability of these text units in the context of patents. Their legal genre is difficult to understand in general  (Alberts et al., 2011) and in particular to laypersons, that is, people without professional or specialised knowledge related to patents. Each patent document follows a predefined structure that consists of the title, abstract, background of the invention, description of the drawings, and claims, among other sections. 
+For patent readability, the claims section can be seen both as the most important and most problematic section: they define the scope of legal protection of the invention and need to be written into a single sentence. This creates several readability problems: First, to protect the invention, wordings are very carefully considered, resulting in difficult-to-understand legal jargon - sometimes referred to as ``lawyers’ French'' - both in terms of vocabulary and grammar. 
+For example, \texttt{consist of} in a patent claim is defined to be a \textit{closed transition} and before a list, it means that inventions infringing this claim need to have all and only the listed elements/steps. In contrast, \texttt{consisting} is a \textit{hybrid transition} with the specific meaning of other inventors possibly being able to invent something new (without infringing this claim) by employing some additional elements/steps. Second, the sentences are so long and grammatically hard, that understanding their content becomes difficult. The third transition type is called open transition, defined as having at least the following elements/steps. To illustrate, let us provide the following 156 words example claim sentence with the three types of transition phrases underlined: 
+
+
+\vspace{0.5cm}
+\begin{minipage}{11cm}
+\begin{small}
+\centering
+\textsf{Toolholder, which could comprise of a holder body with an insert site at its forward end consisting essentially of a bottom surface and at least one side wall where there projects a pin from said bottom surface upon which there is located an insert having a central bore, clamping wedge for wedging engagement between a support surface of the holder and an adjacent edge surface of said insert and an actuating screw received in said wedge whilst threadably engaged in a bore of said holder, said support surface and said edge surface are at least partially converging downwards said wedge clamp having distantly provided protrusions for abutment against the top face and the edge surface of said insert, characterized in that the wedge consists of a pair of distantly provided first protrusions for abutment against a top face of the insert, and a pair of distantly provided second protrusions for abutment against   an adjacent edge surface.}
+\end{small}
+\end{minipage}
+\vspace{0.5cm}
+
+Similarly to our example of words with specific meaning, both punctuation and lexical markers carry a specific meaning (to a patent lawyer but not to a layperson).  
+Furthermore, a claim should be composed by, at least, the following parts,
+
+\begin{itemize}
+\item[-] \textbf{Preamble}: a preamble is  an introduction, which describes the class of the invention.
+\item[-] \textbf{Transitional phrase}:  a transitional phrase is a phrase or linking word that relates the preamble with the rest of the claim.
+The expressions comprising, containing, including, consisting of, wherein and characterise
+in that are the most common transitions.
+\item[-] \textbf{Body}: the body text describes the invention and recites its limitations.
+\end{itemize}
+
+Our goal is to study laypersons' attitudes towards technologies for improving patent readability. By following the definition of the Oxford dictionaries (\url{http://www.oxforddictionaries.com/}) we use laypersons as a reference to those without professional or specialized knowledge in patent documents.
+
+Our research method is a questionnaire study, implemented as a cascaded approach of using different technologies and answering our online questionnaire. This cascade is divided to the following five readability areas with six tested problems in total:
+
+\begin{enumerate}
+\item \textbf{Word readability:} Understanding a patent claim because it has jargon words with special meaning. (Test 2)
+\item Claim readability: 
+Understanding key topics in a patent claim because it is an unusual long sentence. (Test 3)
+Understanding patent claim because they are unusually long. (Test 1)
+\item \textbf{Section readability}: Understanding claim dependency structure. (Test 4)
+\item \textbf{Document readability:} Understanding patent classification codes that summarise the document content. (Test 5)
+\item \textbf{Collection readability}: Retrieving a collection of relevant patent documents from the gamut of documents, understanding this collection, navigating through it, and summarising it in terms of  (Test 6) its topics and topic relations and its authors and organisation and their relations.  
+\end{enumerate} 
+
+See \url{https://docs.google.com/document/d/1SoaVrwgoImt25hrgrNM9DZ5ihJj7aGunm6qBJP4FzjI/edit#  for further elaboration of these problems and solution technologies}.
+
+ 
+ 
+\section{Materials and Methods}
+\label{material}
+
+\subsection{Theoretical Background}
+
+The theoretical background of this study is based on the papers related to the technology acceptance model (TAM) (Davis et al. 1989; Venkatesh and Davis 2000), task technology fit (TTF) (Goodhue 1995), and web site user satisfaction (WSUS) (Muylle et al. 2004).
+
+TAM (Davis et al. 1989) attempts to understand why people accept or reject information technologies. It applies a very general model of human behaviour called the theory of reasoned action (TRA) (Fishbein and Ajzen 1975) to the domain of user acceptance in the context of information technologies. This serves as a theoretical justification for specifying causal linkages between perceived usefulness (PU), perceived ease of use (PEU),  and the concepts of the Structural Equation Model (Igbaria 1997): users’ attitudes, intention, and technology adoption behaviour. TAM defines PU is defined as the degree to which a person believes that using a particular technology will enhance his/her work performance and PEU as the degree to which a person believes that using a particular system will be free of effort. TRA postulates that people’s reasoning flows from 1) their beliefs and evaluations through 2) them developing an attitude towards performing a certain behaviour via 3) this attitude then having a causal role with their intention to perform this behaviour to 4) this intention finally defining if the behaviour is executed or not. In this model, external variables (e.g., user characteristics, political influences, organisational factors, and development process) are expected to influence technology acceptance indirectly by affecting people’s beliefs, attitudes, or intentions (Szajna 1996).
+
+We chose this model, because TAM and/or its key concepts of PU and PEU are widely accepted among the research community as tools for evaluating technologies and predicting their use and are applicable to cases such as ours where technology use is optional (Doll et al 1998). TAM has also been validated with a number of technologies (Davis et al. 1989, 1992; Davis 1993; Igbaria 1993; Igbaria et al. 1994; Dishaw and Strong 1999; Horton et al 2001) and cultures (Straub et al. 1997). Moreover, TAM can be used to evaluate technologies very early on in their development or assess user reactions to technologies on a trial basis (Davis et al. 1989). Finally, only a very brief period of user interaction with technology is needed before the model is capable to explain and predict user acceptance (Szajna 1996; Doll et al. 1998).
+
+TTF (Goodhue 1995) views technologies as means for a goal-directed person to perform tasks. It posits that technologies will be used if, and only if, their available functionalities support the user’s activities. Consequently, its focus is on the match between user task needs  and available functionalities of a given technology. The match is measured by the extent that 1. technology functionalities or characteristics meet its 2. user’s abilities and 3. task requirements (Goodhue 1995, Dishaw and Strong 1999). In other words, the model is three dimensional. Rational, experienced users will choose to use technologies that enable them to complete their tasks with the greatest net benefit and not to use technologies that will not offer them a sufficient advantage. Similarly to TAM, TTF is applicable to cases where technology use is optional. TTF ha beens also integrated with TAM before, because these two models have a clear overlap (Dishaw and Strong 1999). This integration considers both the attitudes towards technologies and the fit between technology functionalities and task characteristics relevant to a given user. According to the integrated model, the three parallel dimensions affecting the fourth dimension of 4. user evaluations of TTF are 1. technology characteristics,2. user’s skills and abilities, and 3. interaction between the task and technology (and user). This has been found to offer a significant improvement over either TAM or TTF alone. 
+
+We chose TTF because our goal is to assess which technologies/technology functionalities contribute to the readability of patent claims, documents, and document collections from layperson’s perspective in the context of  reading and searching tasks. We decided not to choose the integrated model but rather to consider both TAM and TTF separately, because this seems to be more common practice in the research community. 
+
+WSUS (Muylle et al. 2004) is based on a two-step study. First, a pilot study was conducted in order to define which items contribute to user satisfaction if using a web interface to interact with technology users. The contributing items were along eleven dimensions (i.e., 1. information relevancy, 2. information accuracy, 3. information comprehensibility, 4. information comprehensiveness, 5. ease of use, 6. entry guidance, 7. website structure, 8. hyperlink connotation, 9. website speed, 10. layout, and 11. language customisation). The dimensions 1-4 constitute the component of information, the dimensions 5-9 the component of connection, and the remaining components are layout (i.e., dimension 10) and language customisation (i.e., dimension 11). Second, a confirmatory factor analysis was performed for these items and its results demonstrated the adequate validity and reliability of the initial model. The theories laying the foundation for WSUS relate to measuring technology users’ computing satisfaction (Doll and Torkzadeh 1988) with five measurable dimensions that correlate with user satisfaction (i.e., 1. content, 2. accuracy, 3. format, 4. ease of use, and 5. timelines); information success model (DeLone and McLean 1992) with six dimensions (i.e., 1. system quality for measuring technical success and 2. information quality for measuring semantic success together with 3. use, 4. user satisfaction, 5. individual impacts, and 6. organizational impacts for measuring effectiveness success); and slightly revised information success model  that takes changes in the role and management of technologies in 1990s and early 2000 (DeLone and McLean 2003). 
+
+We chose to consider WSUS, because patent search is typically implemented on the Internet as a web search engine (e.g., The Lens (http://www.lens.org/lens/) a open public resource of this kind). It is also a contrasting approach to the supplementary models of TAM and TTF.
+
+
+\subsection{Questionnaire}
+\label{questionnaire}
+
+Our questionnaire consisted of XXX questions in English (Table XXX). XXX of the questions were unstructured so that the participants could freely write down their own comments. Other questions were structured and the answers used a five- or three-point scale analogous to the Likert scale.
+
+The questionnaire was implemented using the open source on-line survey application: LimeSurvey (\url{https://www.limesurvey.org/en/})
+
+Questions were designed using the papers by Davis (1989), Goodhue (1995), Doll et al. (1998), Dishaw and Strong (1999), Venkatesh and Davis (2000), Anandrajan et al. (2000), and Muylle et al. (2004). To incorporate elements of interaction and visual analytics that are crucial in the Internet technologies to support retrieving a collection of relevant patent documents from the gamut of documents, navigating through it, summarising it, and understanding its each claim in 2010s, we included some timely techniques from user evaluations related to search engines (Angelini et al. 2013; Hill and Toms 2013).  However, all questions proposed in the papers were modified so that the fit the tasks at hand. To shorten the answering time, the questions were also formulated in a way that the same question fits at least two of the theoretical models. All questions and the related models are presented in Table XXX. The question pattern is repeated separately after each part of the six-step study (we refer to the parts with the term Test (See Section 1)).
+
+The original studies were used to formulate our questions. TAM questions were based on Davis (1989), Doll et al. (1998), Dishaw and Strong (1999), Venkatesh and Davis (2000), and Anandrajan et al. (2000). However, some questions were combined to keep the number of questions as small as possible, but still paying attention to covering all dimensions of the original model. TTF questions were based on Goodhue (1995) and Dishaw and Strong (1999). WSUS questions based on Muylle et al. (2004) did not address the dimension 6. entry guidance at all, because our test modules do not have a joint entry page yet and also our technologies address English laypeople reading English patent documents only. Moreover, they did not address the dimension 9. website speed either, because our technology development has rather aimed to optimise the content than speed; after validating the content through this user study, we will address the speed dimension. Finally,  in order shorten the answering time, we chose only approximately one question for each WSUS dimension as opposed to the model’s original three to four questions per dimension.
+
+
+\begin{table}
+\caption{Questions and related models}
+\begin{small}
+\begin{tabular}{p{10cm}lll}
+\textbf{Questions and answer options} & \textbf{TAM WSUS} &  \textbf{TTF}  \\ \hline \hline
+In my opinion, it is important to improve the readability of patent documents: strongly agree / somewhat agree / neutral / somewhat disagree / strongly disagree & & \\
+In my opinion, it is difficult to read patent documents: strongly agree / somewhat agree / neutral / somewhat disagree / strongly disagree & & \\
+Please order the ways of representing the patent document of Test t in your preference order: 1. my most preferred option is: … N. my least preferred option is: \ldots & & \\
+In my opinion, there is an even better way of representing the patent document: yes / no . If yes, please describe it as free text. & & \\
+I do not find information I need easily from patent documents as they are now:  yes / no & & \\
+Please, explain what aspects of the way patent documents are presented are you happy with.  & & \\
+Please, explain how this format could be improved  & & \\
+I think my preferred option supports reading patent documents & & \\
+I can see myself using my preferred option when reading patent documents & & \\
+I plan to use my preferred option (given it was made available & & \\
+I think my preferred option supports my work & & \\ 
+In my opinion, I do not find information I need easily from patent documents even if using the most preferred option & & \\ \hline \hline
+% When reading patent documents, I am already representing them in a way clearer to me: yes/no. If yes, please describe as free text what does this representation look like and do you create it by pen and paper / electronically on Word, PowerPoint, Excel, or similar program / by using an automated visualisation too (if yes, what).
+\label{Questions}
+\end{tabular}
+\end{small}
+\end{table}
+
+{\color{blue}{Gabi said: add column for answers in Table~\ref{Questions}} ? }
+
+
+\subsubsection{Demographic questions}
+\begin{enumerate}
+\item \textbf{What is your age?}
+	\begin{itemize}
+	\item[-] 20 or younger
+	\item[-] 21-30
+	\item[-] 31-40 
+	\item[-] 41-50 
+	\item[-] 51-60 
+	\item[-] 61 or older 
+	\end{itemize}
+
+\item \textbf{What is the highest level of school you have completed or the highest degree you have received?}
+	\begin{itemize}
+	\item[-] Less than high school degree
+	\item[-] High school degree or equivalent 
+	\item[-] Some college but not degree
+	\item[-] Bachelor degree
+	\item[-] Graduate degree
+	\end{itemize}
+	
+\item \textbf{Which of the following best describes your current occupation?}
+	\begin{itemize}
+	\item[-] Business and financial operations occupation
+	\item[-] Computer and mathematical occupation
+	\item[-] Architecture and engineering occupation
+	\item[-] Life, physical science
+	\item[-] Community and social service occupation
+	\item[-] Legal occupation
+	\item[-] Education, training occupation
+	\item[-] Arts, design, entertainment occupation
+	\item[-] Health care occupation
+	\item[-] Office and administrative occupation
+	\item[-] Other (please specify)..................
+	\end{itemize}
+	
+\item \textbf{Have you ever read a patent document?}
+	\begin{itemize}
+	\item[-] Yes
+	\item[-] No
+	\end{itemize}
+
+\item \textbf{Have you ever write a patent document or part of it?}
+	\begin{itemize}
+	\item[-] Yes
+	\item[-] No
+	\end{itemize}
+
+\item \textbf{Do you use or have you used patent documents at your work on a daily basis? If yes, how and when?}
+	\begin{itemize}
+	\item[-] Yes
+	\item[-] No
+	\end{itemize}
+\end{enumerate}
+
+
+
+\subsection{Tests used}
+{\color{blue} Gabi said: include figures with the tests from the survey}
+{\color{blue} Jaume?}
+
+
+
+
+\section{Evaluation results and discussion}
+\label{eval}
+
+
+\subsection{Participants}
+
+{\color{blue} Gabi said: should we explain here the recruitment process?}
+Recruitment: XXX
+
+We got 65 participants in total, of which XXX were by men and XXX by women (see Table~\ref{participants} for more detailed information about the population). There were XXX (education and affiliation descriptives). 
+However, because we did not build any statistical models using these descriptive categories as, for example, grouping variables, we decided no to detail the analysis on this level either.
+
+
+{\color{blue} Gabi said: note that we did not ask for the gender}
+
+
+\begin{table}
+\caption{Participant demographics}
+\begin{small}
+\begin{tabular}{ll}
+\hline
+\textbf{Question} & \textbf{Percentage} \\ \hline 
+\textbf{What is your age?} &  \\ 
+20 or younger 0	& 0.00\% \\
+21-30 & 	 13.11\% \\
+31-40 & 36.07\% \\
+41-50 	& 22.95\% \\ 
+51-60 	& 14.75\% \\
+61 or older & 4.92\% \\
+No answer &	 8.20\% \\ \hline
+
+\textbf{What is the highest level of school you have completed or the highest degree you have received?} & \\ 
+Less than high school degree & 0.00\% \\ 
+High school degree or equivalent & 4.92\% \\
+Some college but not degree & 8.20\% \\
+Bachelor degree & 22.95\% \\
+Graduate degree & 65.57\% \\ \hline
+
+\textbf{Which of the following best describes your current occupation?} & \\
+Business and financial operations occupation & 9.84\% \\
+Computer and mathematical occupation & 34.43\% \\
+Architecture and engineering occupation & 	4.92\% \\
+Life, physical science &  3.28\%  \\
+Community and social service occupation & 3.28\% \\
+Legal occupation & 	8.20\% \\
+Education, training occupation & 	14.75\% \\
+Arts, design, entertainment occupation & 14.75\% \\
+Health care occupation & 4.92\% \\
+Office and administrative occupation & 6.56\% \\
+Other &	9.84\% \\ \hline
+\end{tabular}
+\label{participants}
+\end{small}
+\end{table}
+
+Some (7 out of 65) participants gave more details about their occupation, and the categories
+are: patent examiners, journalist, translator, cultural and information occupation and management.
+
+
+
+
+\subsection{Analysis of the Answers}
+All analyses were performed by using the statistical software package XXX.
+
+
+\begin{table}
+\centering
+\caption{}
+\begin{small}
+\begin{tabular}{p{8cm}lll}
+\hline
+\textbf{Question} 	& \textbf{Count}	& \textbf{Percentage} \\ 
+\textbf{Have you ever read a patent document?}	& & 	\\ \hline 
+Yes & 	35	& 57.38\% 	\\ 
+No & 19	& 31.15\% 	\\ 
+No answer	& 7	& 11.48\% 	\\ \hline		
+
+\textbf{Have you ever written a patent document or part of it?}	& & \\	
+Yes & 10	 & 16.39\% \\
+No &	 45	& 73.77\% \\
+No answer 6 &	9.84\% \\ \hline
+		
+\textbf{Do you use or have you used patent documents at your work on a daily basis? If yes, how and when?} & & \\
+Answer	& 35	& 67.31\% \\ 
+No answer	&  17	& 32.69\% \\ \hline
+\end{tabular}
+\end{small}
+\label{•}
+\end{table}
+
+
+Eight out of sixty five  said they used patent documents at work on a daily basis.
+
+\section{Conclusion and future work}
+
+
+
+{\color{blue} Gabi said: Hanna, do you have the references in bibtex?}
+
+\iffalse
+References
+
+Alberts D, Barcelon Yang C, Fobare-DePonio D, Koubek K, Robins S, Rodgers M, Simmons E, DeMarco D (2011). Introduction to patent searching. In M Lupu, J Tait, Mayer, AJ Trippe (eds.): Current Challenges in Patent Information Retrieval, pp. 3-44. Springer, Toulouse, France.
+
+Anandarajan M, Simmers C, Igbaria M (2000). An exploratory investigation of the antecedents and impact of Internet usage: an individual perspective. Behaviour and Information Technology 19(1):69-85.
+
+Angelini M, Ferro N, Santucci G, Silvello G (2013). Improving ranking evaluation employing visual analytics. Lecture Notes in Computer Science 8138:29-40.
+
+Davis FD (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. MIS Quarterly 13(3):319-340.
+
+Davis FD (1993). User acceptance of computer technology: system characteristics, user perceptions and behavioural impacts. International Journal of Man-Machine Studies 38: 475-487.
+
+Davis FD, Bagozzi RP, Warshaw PR (1989). User acceptance of computer technology: a comparison of two theoretical models. Management Science 35(8):982-1003.
+
+Davis FD, Bagozzi RP, Warshaw PR (1992).Extrinsic and intrinsic motivation to use computers in the workplace. Journal f Applied Social Psychology 22:111-1312.
+
+DeLone WH and McLean ER (1992). Information systems success: the quest for the dependent variable. Information Systems Research 3(1):60-95.
+
+DeLone WH and McLean ER (2003). The DeLone and McLean model of information systems success: a ten-year update. Journal of Management Information Systems 36(1):9-21.
+
+Dishaw MT and Strong DM (1999). Extending the technology acceptance model with task-technology fit constructs. Information and Management 36(1):9-21.
+
+Doll WJ, Hendrickson Am and Deng X (1998). Using Davis’ perceived usefulness and ease-of-use instruments for decision making: a confirmatory and multigroup invariance analysis. Decision Sciences 29(4):839-869.
+
+Doll WJ and Torkzadeh G (1988). The measurement of end-user computing satisfaction. MISQ Quarterly 12(4):259-274.
+
+Fishbein M and Ajzen I (1975). Belief, Attitude, Intention and Behaviour: An Introduction to Theory and Research. Addison-Wesley: Reading, MA, USA.
+
+Goodhue DL (1995). Understanding user evaluations of information systems. Management Science 41(12):1982-1844.
+
+Hill MM and Toms E (2013). Building a common framework for IIR evaluation. Lecture Notes in Computer Science 8138:17-38.
+
+Horton RP, Buck R, Waterson PE, Clegg CW (2001). Explaining Intranet use with the technology acceptance model. Journal of Information Technology 16(4):237-249.
+
+Igbaria M (1993). User acceptance of microcomputer technology: an empirical test. OMEGA International Journal of Management Science 21(1):73-90. 
+
+Igbaria M (1997). Personal computing acceptance factors in small firms: a structural equation model. MIS Quarterly 21(3):279-302.
+
+Igbaria M, Schiffman SJ, Wickowski TJ (1994). The respective roles of perceived fun in the acceptance of microcomputer technology. Behaviour and  Information Technology 13:349-361. 
+
+Muylle S, Moenaert R, and Despontin M (2004). The conceptualization and empirical validation of web site user satisfaction. Information and Management 41(5):543-560.
+
+Straub D, Keil M, Brenner W (1997). Testing the technology acceptance model across cultures: a three country study. Information and management 25(1):1-11.
+
+Szajna B (1996). Empirical evaluation of the revised technology acceptance model. Management Science 42(1):85-92. 
+
+Venkatesh V and Davis FD (2000). A theoretical extension of the technology acceptance model: four longitudinal field studies. Management Science 46(2):186-204.
+\fi
+
+
+%\bibliographystyle{acl2013}
+%\bibliography{biblio}
+
+\end{document}
